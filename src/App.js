@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Footer from "./Components/Footer";
+import Hero from "./Components/Hero";
+import Info from "./Components/Info";
+import Navbar from "./Components/Navbar";
+import Details from "./Components/details";
+import Form from "./Components/form";
+import Menu from "./Components/menu";
+import { useState } from "react";
 function App() {
+  const[clicked, setClicked] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+       <div className="">
+        <Navbar setClicked={setClicked} clicked={clicked}/>
+        <Menu clicked={clicked}/>
+        <Hero/>
+        <Form/>
+        <Info/>
+        <Details/>
+        <Footer/>
+        </div> 
   );
 }
 
