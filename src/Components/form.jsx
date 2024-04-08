@@ -16,19 +16,21 @@ const Form = () => {
       <input placeholder='Company name*' required className="placeholder:text-sm px-3 py-1 md:py-2 border-solid border-2 border-t-0 border-r-0"></input>
       <input placeholder='Company website*' required className="placeholder:text-sm px-3 py-1 md:py-2 border-solid border-2 border-t-0 border-r-0"></input>
       <select prefix='country' required className="placeholder:text-sm px-3 py-1 md:py-2 border-solid border-2 border-t-0 border-r-0">
+        <option disabled selected>Country*</option>
         <option>United States</option>
         <option>India</option>
         <option>Austrailia</option>
         <option>China</option>
         <option>Japan</option>
       </select>
-      <select prefix='estimated annual sales' required className="placeholder:text-sm px-3 py-3 border-solid border-2 border-t-0 border-r-0">
-        <option>Select Annual Sales</option>
+      <select placeholder='estimated annual sales' required className="placeholder:text-sm px-3 py-3 border-solid border-2 border-t-0 border-r-0">
+        <option disabled selected>Select Annual Sales</option>
         <option>less than 1000000</option>
         <option>more than 2000000</option>
         <option>more than 4000000</option>
       </select>
       <select prefix='Do you already have a PayPal business account?' required className="placeholder:text-sm px-3 py-3 border-solid border-2 border-t-0 border-r-0">
+       <option disabled selected>Do you already have a PayPal business account?*</option>
         <option>Yes</option>
         <option>No</option>
       </select>
